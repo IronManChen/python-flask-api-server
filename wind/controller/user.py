@@ -28,8 +28,9 @@ class UserController(ControllerBase):
             LOG.info("用户: {0} 认证成功, 获取 Token: {1}".format(username, token))
             return token
 
-    def get_user_by_token(self, token):
-        username = self.userdb.get_token(token)
+    @classmethod
+    def get_user_by_token(cls, token):
+        username = cls().userdb.get_token(token)
         if len(username) == 0:
             raise AuthError
         else:
