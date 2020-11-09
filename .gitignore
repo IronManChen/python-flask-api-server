@@ -17,3 +17,5 @@ parts/
 sdist/
 var/
 *.egg-info/
+ChangeLog
+AUTHORS
