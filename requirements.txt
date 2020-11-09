@@ -1,0 +1,6 @@
+Flask
+Werkzeug
+oslo.config
+oslo.messaging
+mysqlclient
+gunicorn
